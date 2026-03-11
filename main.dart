@@ -4,5 +4,9 @@ void main() {
   stdout.write("Masukkan sebuah angka: ");
   int angka = int.parse(stdin.readLineSync()!);
 
-  print("Angka yang dimasukkan: $angka");
+  if (angka % 2 == 0) {
+    print("$angka adalah bilangan GENAP");
+  } else {
+    print("$angka adalah bilangan GANJIL");
+  }
 }
